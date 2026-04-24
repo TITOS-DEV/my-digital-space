@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import profile from "@/assets/profile.jpeg";
 
 const stats = [
-  { value: "50+", label: "Proyectos" },
+  { value: "500+", label: "Commits este año" },
   { value: "3", label: "Años creando" },
-  { value: "20+", label: "Clientes felices" },
+  { value: "2K+", label: "Horas de enfoque" },
   { value: "∞", label: "Café tomado" },
 ];
 
