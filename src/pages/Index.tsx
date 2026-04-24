@@ -10,8 +10,7 @@ const stats = [
 ];
 
 const skills = [
-  "React", "TypeScript", "Node.js", "Tailwind CSS",
-  "Next.js", "Figma", "PostgreSQL", "UI/UX", "Framer Motion",
+  "Figma", "Node.js", "HTML", "CSS", "JavaScript", "n8n", "Supabase", "APIs",
 ];
 
 const projects = [
