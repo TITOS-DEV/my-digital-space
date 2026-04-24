@@ -14,10 +14,9 @@ const skills = [
 ];
 
 const projects = [
-  { n: "01", title: "Plataforma SaaS", tag: "Producto", year: "2025", desc: "Dashboard analítico para equipos remotos." },
-  { n: "02", title: "E-commerce headless", tag: "Comercio", year: "2024", desc: "Tienda rápida con CMS modular." },
-  { n: "03", title: "Identidad visual", tag: "Branding", year: "2024", desc: "Sistema de diseño completo." },
-  { n: "04", title: "App móvil fitness", tag: "Mobile", year: "2023", desc: "Tracking + comunidad gamificada." },
+  { n: "01", title: "Tidi", tag: "Producto", year: "2025", desc: "Plataforma diseñada y construida desde cero." },
+  { n: "02", title: "Minsky", tag: "Producto", year: "2025", desc: "Experiencia digital moderna y fluida." },
+  { n: "03", title: "Edusystem", tag: "EdTech", year: "2024", desc: "Sistema educativo completo y escalable." },
 ];
 
 const socials = [
