@@ -186,7 +186,7 @@ const Index = () => {
         </section>
 
         {/* CONTACT */}
-        <section id="contact" className="border-t border-hairline bg-foreground text-background">
+        <section id="contact" className="border-t border-hairline bg-muted-soft">
           <div className="max-w-6xl mx-auto px-6 md:px-10 py-32">
             <p className="font-mono text-xs uppercase tracking-[0.2em] opacity-60 mb-6">
               ( 04 ) Contacto
@@ -224,7 +224,7 @@ const Index = () => {
         </section>
 
         {/* FOOTER */}
-        <footer className="bg-foreground text-background border-t border-background/10">
+        <footer className="bg-muted-soft border-t border-hairline">
           <div className="max-w-6xl mx-auto px-6 md:px-10 py-8 flex flex-wrap justify-between items-center gap-4 font-mono text-xs uppercase tracking-wider opacity-60">
             <span>© 2026 — Todos los derechos reservados</span>
             <span>Hecho con ♥ y café</span>
