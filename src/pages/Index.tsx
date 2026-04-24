@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
+import { ArrowUpRight, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
 import profile from "@/assets/profile.jpeg";
 
 const stats = [
@@ -50,7 +51,7 @@ const Index = () => {
             <a href="#about" className="hover:text-accent-red transition-colors">About</a>
             <a href="#work" className="hover:text-accent-red transition-colors">Work</a>
             <a href="#skills" className="hover:text-accent-red transition-colors">Skills</a>
-            <a href="#contact" className="hover:text-accent-red transition-colors">Contact</a>
+            <Link to="/contact" className="hover:text-accent-red transition-colors">Contact</Link>
           </nav>
           <span className="hidden md:block text-xs font-mono text-muted-foreground">{time} LOCAL</span>
         </div>
@@ -73,9 +74,9 @@ const Index = () => {
               experiencias rápidas y productos con propósito.
             </p>
             <div className="flex items-end">
-              <a href="#contact" className="group inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wider border-b border-foreground pb-1 hover:text-accent-red hover:border-accent-red transition-colors">
+              <Link to="/contact" className="group inline-flex items-center gap-2 text-sm font-mono uppercase tracking-wider border-b border-foreground pb-1 hover:text-accent-red hover:border-accent-red transition-colors">
                 Hablemos <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -183,40 +184,39 @@ const Index = () => {
           </div>
         </section>
 
-        {/* CONTACT */}
-        <section id="contact" className="border-t border-hairline bg-muted-soft">
-          <div className="max-w-6xl mx-auto px-6 md:px-10 py-32">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] opacity-60 mb-6">
-              ( 04 ) Contacto
-            </p>
-            <h2 className="font-display text-[clamp(2.5rem,8vw,6.5rem)] leading-[0.95] font-light tracking-tight">
-              ¿Tienes una idea?<br />
-              <em className="not-italic text-accent-red">Construyámosla.</em>
-            </h2>
-            <div className="mt-16 grid md:grid-cols-2 gap-12">
-              <div>
-                <p className="font-mono text-xs uppercase tracking-wider opacity-60 mb-3">Email</p>
-                <a href="mailto:hola@ejemplo.com" className="group inline-flex items-center gap-3 font-display text-2xl md:text-3xl hover:text-accent-red transition-colors">
-                  <Mail className="w-6 h-6" />
-                  hola@ejemplo.com
-                </a>
-              </div>
-              <div>
-                <p className="font-mono text-xs uppercase tracking-wider opacity-60 mb-3">Redes</p>
-                <ul className="flex flex-wrap gap-3">
-                  {socials.map(({ icon: Icon, label, url }) => (
-                    <li key={label}>
-                      <a
-                        href={url}
-                        aria-label={label}
-                        className="w-12 h-12 inline-flex items-center justify-center border border-background/20 rounded-full hover:bg-accent-red hover:border-accent-red transition-colors"
-                      >
-                        <Icon className="w-5 h-5" />
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+        {/* CTA + REDES */}
+        <section className="border-t border-hairline bg-muted-soft">
+          <div className="max-w-6xl mx-auto px-6 md:px-10 py-24 grid md:grid-cols-12 gap-10 items-center">
+            <div className="md:col-span-7">
+              <p className="font-mono text-xs uppercase tracking-[0.2em] opacity-60 mb-4">
+                ( 04 ) Trabajemos juntos
+              </p>
+              <h2 className="font-display text-4xl md:text-6xl font-light leading-[0.95] tracking-tight">
+                ¿Tienes una idea?<br />
+                <em className="not-italic text-accent-red">Construyámosla.</em>
+              </h2>
+            </div>
+            <div className="md:col-span-5 flex flex-col gap-8 md:items-end">
+              <Link
+                to="/contact"
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-accent-red text-accent-red-foreground font-mono text-sm uppercase tracking-wider hover:opacity-90 transition-opacity"
+              >
+                Contáctame
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </Link>
+              <ul className="flex flex-wrap gap-3">
+                {socials.map(({ icon: Icon, label, url }) => (
+                  <li key={label}>
+                    <a
+                      href={url}
+                      aria-label={label}
+                      className="w-12 h-12 inline-flex items-center justify-center border border-hairline rounded-full hover:bg-accent-red hover:border-accent-red hover:text-accent-red-foreground transition-colors"
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>
