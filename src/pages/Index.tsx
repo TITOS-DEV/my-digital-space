@@ -14,8 +14,8 @@ const skills = [
 ];
 
 const projects = [
-  { n: "01", title: "Tidi", tag: "Producto", year: "2025", desc: "Plataforma diseñada y construida desde cero." },
-  { n: "02", title: "Minsky", tag: "Producto", year: "2025", desc: "Experiencia digital moderna y fluida." },
+  { n: "01", title: "Tidi", tag: "Fintech", year: "2025", desc: "Finanzas personales con voz y cámara." },
+  { n: "02", title: "Minsky", tag: "Marketing", year: "2025", desc: "Marketing centralizado para equipos de mercadeo." },
   { n: "03", title: "Edusystem", tag: "EdTech", year: "2024", desc: "Sistema educativo completo y escalable." },
 ];
 
