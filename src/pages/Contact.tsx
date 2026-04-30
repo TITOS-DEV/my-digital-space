@@ -102,11 +102,11 @@ const Contact = () => {
                   Email directo
                 </p>
                 <a
-                  href="mailto:hola@ejemplo.com"
+                  href="mailto:cdbt3980@gmail.com"
                   className="group inline-flex items-center gap-3 font-display text-2xl hover:text-accent-red transition-colors"
                 >
                   <Mail className="w-5 h-5" />
-                  hola@ejemplo.com
+                  cdbt3980@gmail.com
                 </a>
               </div>
 
